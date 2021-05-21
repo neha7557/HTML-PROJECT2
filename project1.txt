@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+        
+
+        <title>My HTML page</title>
+
+<style>
+  body {
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+  button.button1,button.button2 {
+        background-color: blue;
+        border:none;
+        color: black;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+       border-radius: 50px;
+<!-- border-radius: 150%;-->
+      }
+button.button3,button.button4 {
+
+        border:none;
+        color: black;
+
+        text-align: center;
+        text-decoration-line: underline;
+
+        font-size: 20px;
+
+        cursor: pointer;
+
+
+      }
+
+
+
+
+ h1 {
+
+    font-size: 4em;
+    text-align: center;
+    color: black;
+
+}
+
+
+
+div{
+    background: blue;
+    text-align: right;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+div a {
+  float: right;
+  display: block;
+  color: whitesmoke;
+  text-align: right;
+  padding: 14px 6px;
+  text-decoration: none;
+}
+
+div label {
+    float: left;
+    font-size: 40px;
+    color: whitesmoke;
+ text-align: left;
+}
+
+
+/* Change background on mouse-over */
+div a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+p{
+font-size: 2em;
+    text-align: center;
+    color: black;
+
+    }
+
+img{
+    height: 110px;
+
+}
+ h2  {
+    text-decoration: underline;
+}
+
+    /* The navigation bar */
+navbar {
+  overflow: hidden;
+  background: #4CAF50;
+  <!--position: fixed; /* Set the navbar to fixed position */-->
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+    border: blue;
+}
+
+/* Links inside the navbar */
+navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 44px 36px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <label>Abcd</label>
+    <a href="#linksandcontacts" style="text-decoration: none" style="text-align:right">Links and Contacts</a>
+    <a href="#milestones" style="text-decoration: none" style="text-align:right">Milestones</a>
+    <a href="#featuredprojects" style="text-decoration: none" style="text-align:right">Featured Projects</a>
+    <a href="#pool" style="text-decoration: none" style="text-align:right">Pool</a>
+    <a href="#farm" style="text-decoration: none" style="text-align:right">Farm</a>
+    <a href="#raffle" style="text-decoration: none" style="text-align:right">Raffle</a>
+    <a href="#smartstake" style="text-decoration: none" style="text-align:right">Smart Stake</a>
+
+</div>
+
+<!--<div class="main">
+  <p>Some text some text some text some text..</p>
+</div>-->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+        <img src="img2.jpg" alt="designer" align="right"/>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+        <h1>Decentralized community-backed IDO platform for Binance smart chain(BSC) projects </h1>
+    <p>-----------------------------------------</p>
+    <p>A Bright, Unique, and Engaging IDO platform to empower the most innovative crypto projects by leveraging the power of community</p>
+
+
+
+    <p><button class="button1" onclick="img1.jpg">
+      Go to App
+    </button>
+
+     <button class="button2" onclick="img1.jpg">
+      Subscribe to upcoming pools
+     </button></p>
+
+
+    <img id="image1" src="img1.jpg" alt="designer" height="100px" />
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p><button class="button3" onclick="displayingMessageOnButtonClick()">Featured Projects</button>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+   <p id="showTheimage"> </p>
+   <button class="button4" onclick="displayingMessageOnButtonClick2()">Upcomming Projects</button>
+
+    <p id="showTheimage2"> </p>
+
+
+<script>
+   function displayingMessageOnButtonClick() {
+      const showMessage = document.getElementById('showTheimage');
+      showMessage.innerHTML='<img src="img1.jpg" height="100px" />'
+
+   }
+</script>
+
+<script>
+   function displayingMessageOnButtonClick2() {
+      const showMessage = document.getElementById('showTheimage2');
+      showMessage.innerHTML='<img src="img1.jpg" height="100px" />'
+
+   }
+</script>
+   </body>
+
+</html>
